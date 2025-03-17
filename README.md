@@ -15,5 +15,7 @@ Praktikum 5
 ![Screnshoot hasil Hello Word](images/05.png)
 ![Screnshoot hasil Hello Word](images/06.png)
 ![Screnshoot hasil Hello Word](images/07.png)
-![Screnshoot hasil Hello Word](images/07.png)
+![Screnshoot hasil Hello Word](images/08.png)
+![Screnshoot hasil Hello Word](images/09.png)
+
 
