@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
- 
+import 'basic_widgets/scaffoldwidget.dart';
+import 'basic_widgets/dialogwidget.dart';
+import 'basic_widgets/inputselectionwidget.dart';
+import 'basic_widgets/datetime.dart';
+import 'basic_widgets/floatingactionbutton.dart'; 
 import 'basic_widgets/image_widget.dart';
 import 'basic_widgets/text_widget.dart';
 import 'basic_widgets/loading_cupertino.dart';
-import 'basic_widgets/floatingactionbutton.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +37,36 @@ class HomeScreen extends StatelessWidget {
           shrinkWrap: true,
           padding: const EdgeInsets.all(16),
           children: [
-           
+            _buildNavigationButton(
+              context, 
+              "Scaffold Widget", 
+              const ScaffoldWidget(),
+              icon: Icons.dashboard,
+            ),
+            _buildNavigationButton(
+              context, 
+              "Dialog Widget", 
+              const DialogWidget(),
+              icon: Icons.chat_bubble_outline,
+            ),
+            _buildNavigationButton(
+              context, 
+              "Input & Selection Widget", 
+              const InputSelectionWidget(),
+              icon: Icons.edit_note,
+            ),
+            _buildNavigationButton(
+              context, 
+              "Date Picker Widget", 
+              const DateTimePickerWidget(),
+              icon: Icons.calendar_today,
+            ),
+            _buildNavigationButton(
+              context, 
+              "Floating Action Button", 
+              FloatingActionButtonExample(),
+              icon: Icons.thumb_up,
+            ),
             _buildNavigationButton(
               context, 
               "Image Widget", 
@@ -51,12 +83,6 @@ class HomeScreen extends StatelessWidget {
               context, 
               "Text Widget", 
               const MyTextWidget(),
-              icon: Icons.text_fields,
-            ),
-            _buildNavigationButton(
-              context, 
-              "floating action button ", 
-               FloatingActionButtonExample(),
               icon: Icons.text_fields,
             ),
           ],
